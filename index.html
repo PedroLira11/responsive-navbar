@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,6 +31,43 @@
         </ul>
       </div>
     </header>
+    <!-- Modal HTML -->
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+    <img src="img/banner.jpg" alt="" width="100%" height="auto">
+    <div class="caixa-de-texto">
+      <p>Este é um exemplo de caixa de texto com algum conteúdo.</p>
+    </div>
+    <div class="space">
+      <article> </article>
+    </div>
+    <div class="faq">
+      <div class="pergunta">
+        <p>Qual é a pergunta 1?</p>
+        <span class="icone" onclick="openModal('resposta1')">+</span>
+      </div>
+      <div class="pergunta">
+        <p>Qual é a pergunta 2?</p>
+        <span class="icone" onclick="openModal('resposta2')">+</span>
+      </div>
+      <!-- Adicione mais perguntas conforme necessário -->
+  
+      <!-- Modais para as respostas -->
+      <div id="resposta1" class="modal">
+        <span class="close" onclick="closeModal('resposta1')">&times;</span>
+        <p>Resposta para a pergunta 1.</p>
+      </div>
+      <div id="resposta2" class="modal">
+        <span class="close" onclick="closeModal('resposta2')">&times;</span>
+        <p>Resposta para a pergunta 2.</p>
+      </div>
+      <!-- Adicione mais modais conforme necessário -->
+    </div>
+
+
     <script src="index.js"></script>
   </body>
 </html>
